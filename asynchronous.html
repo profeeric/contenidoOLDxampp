@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="demo">AAAAAAAAAA</div>
+		<div id="demo2">AAAAAAAAAA</div>
+		<script>
+			function myFunction() {
+				document.getElementById("demo").style.backgroundColor = "red";
+			}
+
+			setTimeout(myFunction, 3000);
+
+			setTimeout(console.log("ASD"), 5000);
+			function myFunction2() {
+				document.getElementById("demo2").style.backgroundColor = "blue";
+			}
+
+			setTimeout(myFunction2, 3000);
+		</script>
+	</body>
+</html>
