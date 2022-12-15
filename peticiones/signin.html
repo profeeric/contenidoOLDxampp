@@ -15,10 +15,13 @@
 	<body>
 		<form id="loginform" method="post">
 			<div>
-				Username:
-				<input type="text" name="username" id="username" /><br />
-				Password:
-				<input type="password" name="password" id="password" /><br />
+				Username:<br />
+				<input type="text" name="username" id="username" value="asd" /><br />
+				Password:<br />
+				<input type="password" name="password" id="password" value="123" /><br />
+				email:<br />
+				<input type="email" name="email" id="email" value="juan@gmail.com" /><br />
+				<input type="hidden" name="codigo" id="codigo" value="signin" />
 				<input type="submit" name="loginBtn" id="loginBtn" value="Login" />
 			</div>
 		</form>
@@ -56,6 +59,8 @@
 								console.log("username=" + jsonData.username);
 								console.log(jsonData);
 							} else {
+								console.log(jsonData);
+								document.getElementById(jsonData.codeError).style.backgroundColor = "red";
 								alert("Invalid Credentials!");
 							}
 						},
